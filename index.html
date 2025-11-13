@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="row">
+                <img class="logo" src="images/logo.jpg" alt="alt">
+                <p class="logo-head"><b>Elevate labs</b></p>
+                <div class="navoptions">
+                    <div class="menu-toggle">&#9776;</div>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">SERVICES</a></li>
+                        <li><a href="#">SIGN-UP</a></li>
+                        <li><a href="#">LOGIN</a></li>
+                        <li><a href="#">CONTACT</a></li>
+
+                    </ul>
+
+                </div>
+                <div class="content">
+                    <h1>Elevate Labs</h1>
+                    <h3>Build Your Skill In Realworld Projects</h3>
+                    <p class="para">it is one of the platforms those provide a realworld skill </p>
+
+                    <button class="btn">JOIN</button>
+                </div>
+                <div class="image">
+                    <img class="sideimage" src="images/sideimage.jpeg" alt="sideimage">
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    
+
+      <footer data-aos="fade-in" data-aos-duration="2000">
+      <div class="row">
+        <div class="col span_1_of_2">
+           <ul class="footer-nav">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Email</a></li>
+            <li><a href="#">Android app</a></li>
+
+           </ul>
+        </div>
+        <div class="col span_1_of_2">
+           <ul class="social-links">
+              <li><ion-icon class="fb" name="logo-facebook"></ion-icon></li>
+              <li><ion-icon class="tw" name="logo-twitter"></ion-icon></li>
+              <li><ion-icon class="gog" name="logo-google"></ion-icon></li>
+              <li><ion-icon class="ins" name="logo-instagram"></ion-icon></li>
+           </ul>
+        </div>
+      </div>
+      <div class="row">
+        <p>copyright &copy; 2020 is all rights reserved by satyam art kala</p>
+      </div>
+    </footer> 
+
+    
+</body>
+ <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>    
+         <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".dropdown-menu");
+
+    toggle.addEventListener("click", () => {
+        nav.classList.toggle("show"); // Or "active", just be consistent with CSS
+    });
+</script>
+</html>
